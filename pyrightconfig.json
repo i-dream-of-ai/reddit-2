@@ -1,0 +1,22 @@
+{
+  "include": ["tools", "util", "tests"],
+  "exclude": ["**/node_modules", "**/__pycache__", ".venv"],
+  "strict": ["tools", "util"],
+
+  "typeCheckingMode": "strict",
+  "useLibraryCodeForTypes": true,
+  "reportMissingTypeStubs": "warning",
+  "reportUnknownMemberType": "warning",
+  "reportUnknownVariableType": "warning",
+  "reportUnknownArgumentType": "warning",
+  "reportMissingParameterType": "error",
+  "reportMissingTypeArgument": "error",
+  "reportInvalidTypeVarUse": "error",
+  "reportUntypedFunctionDecorator": "warning",
+  "reportUnknownParameterType": "warning",
+  "reportPrivateUsage": "warning",
+
+  "pythonVersion": "3.12",
+  "venvPath": ".",
+  "venv": ".venv"
+}
