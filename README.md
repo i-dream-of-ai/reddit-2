@@ -4,9 +4,8 @@
 
 A plug-and-play [MCP](https://modelcontextprotocol.io) server to browse, search, and read Reddit.
 
-
-
 ## Demo
+Here's a short video showing how to use this in Claude Desktop:
 
 https://github.com/user-attachments/assets/a2e9f2dd-a9ac-453f-acd9-1791380ebdad
 
@@ -15,6 +14,10 @@ https://github.com/user-attachments/assets/a2e9f2dd-a9ac-453f-acd9-1791380ebdad
 - Detailed parameter validation with [pydantic](https://docs.pydantic.dev)
 - Uses the reliable [PRAW](https://praw.readthedocs.io/) library under the hood
 - Built-in rate limiting protection thanks to PRAW
+
+## Caveats
+- Only supports read features for now. If you want to use write features, upvote the [issue](https://github.com/GridfireAI/reddit-mcp/issues/1) or [send a PR](CONTRIBUTING.md)! 🙌
+- Tools use tokens. To use this with Claude, you may need to be a Pro user to use many tool calls. Free tier users should be fine with lighter tool usage. Your token usage is your responsibility.
 
 ## Installation
 
@@ -72,8 +75,6 @@ Then add the following to the configuration file:
 You can use this server with any [MCP client](https://modelcontextprotocol.io/docs/clients), including agent frameworks (LangChain, LlamaIndex, AutoGen, etc). For an example AutoGen integration, check out the [example](examples/autogen).
 
 ## Tools
-
-Right now, the tools implement **read-only** features—write actions like posting, saving, etc. are not yet supported. If you want to see this implemented, upvote the [issue](https://github.com/GridfireAI/reddit-mcp/issues/1) or [send a PR](CONTRIBUTING.md)! 🙌
 
 The tools the server will expose are:
 
