@@ -4,7 +4,11 @@
 
 A plug-and-play [MCP](https://modelcontextprotocol.io) server to browse, search, and read Reddit.
 
+
+
 ## Demo
+
+https://github.com/user-attachments/assets/a2e9f2dd-a9ac-453f-acd9-1791380ebdad
 
 ## Features
 
@@ -69,7 +73,7 @@ You can use this server with any [MCP client](https://modelcontextprotocol.io/do
 
 ## Tools
 
-Right now, the tools implement **read-only** features—write actions like posting, saving, etc. are not yet supported. If you want to see this implemented, upvote the [issue](https://github.com/joshpxyne/reddit-mcp/issues/1) or [send a PR](CONTRIBUTING.md)! 🙌
+Right now, the tools implement **read-only** features—write actions like posting, saving, etc. are not yet supported. If you want to see this implemented, upvote the [issue](https://github.com/GridfireAI/reddit-mcp/issues/1) or [send a PR](CONTRIBUTING.md)! 🙌
 
 The tools the server will expose are:
 
