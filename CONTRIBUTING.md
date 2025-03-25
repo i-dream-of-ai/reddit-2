@@ -38,13 +38,9 @@ Add the following to your Claude Desktop configuration file:
       "command": "<absolute path to your uv executable>",
       "args": [
         "run",
-        "--directory",
-        "<absolute path to the project root>",
         "--with",
-        "mcp[cli]",
-        "mcp",
-        "run",
-        "main.py"
+        "<absolute path to the project root>",
+        "reddit-mcp"
       ]
     }
   }
@@ -54,7 +50,7 @@ Add the following to your Claude Desktop configuration file:
 ### Running directly
 
 ```bash
-uv run main.py
+reddit-mcp
 ```
 
 ### MCP Inspector
