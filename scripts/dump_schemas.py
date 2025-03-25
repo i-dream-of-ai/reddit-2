@@ -1,4 +1,4 @@
-from tools import tools
+from reddit_mcp.tools import tools
 from pydantic import TypeAdapter
 import json
 

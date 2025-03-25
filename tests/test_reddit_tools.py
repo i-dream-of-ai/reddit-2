@@ -1,9 +1,13 @@
 import pytest
-from tools.search_subreddits import search_subreddits, SearchByName, SearchByDescription
-from tools.get_subreddit import get_subreddit, SubredditResult
-from tools.search_posts import search_posts, SearchPostsParams
-from tools.get_submission import get_submission, SubmissionResult
-from tools.get_comments import (
+from reddit_mcp.tools.search_subreddits import (
+    search_subreddits,
+    SearchByName,
+    SearchByDescription,
+)
+from reddit_mcp.tools.get_subreddit import get_subreddit, SubredditResult
+from reddit_mcp.tools.search_posts import search_posts, SearchPostsParams
+from reddit_mcp.tools.get_submission import get_submission, SubmissionResult
+from reddit_mcp.tools.get_comments import (
     get_comments_by_submission,
     get_comment_by_id,
     CommentResult,

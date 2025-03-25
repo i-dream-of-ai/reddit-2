@@ -1,7 +1,7 @@
 from typing import List, Literal
 from pydantic import BaseModel, Field, validate_call
-from util.reddit_client import RedditClient
-from util.date_utils import format_utc_timestamp
+from ..util.reddit_client import RedditClient
+from ..util.date_utils import format_utc_timestamp
 
 
 class PostResult(BaseModel):

@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, validate_call
-from util.reddit_client import RedditClient
+from ..util.reddit_client import RedditClient
 
 
 class SubredditResult(BaseModel):

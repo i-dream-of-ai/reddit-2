@@ -20,11 +20,12 @@ dependencies = [
 ]
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
-[tool.hatch.build.targets.wheel]
-packages = ["tools", "util"]
+[tool.setuptools.packages.find]
+where = ["src", "."]
+include = ["reddit_mcp*", "scripts*"]
 
 [tool.uv.workspace]
 members = ["examples/autogen", "examples/openai-function-calling"]
@@ -47,9 +48,9 @@ python_files = ["test_*.py"]
 addopts = "-v"
 
 [tool.pyright]
-include = ["tools", "util", "tests"]
+include = ["src", "tests"]
 exclude = ["**/node_modules", "**/__pycache__", ".venv"]
-strict = ["tools", "util"]
+strict = ["src"]
 
 typeCheckingMode = "strict"
 useLibraryCodeForTypes = true
